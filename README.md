@@ -8,7 +8,7 @@
 5. Extending Usecase-4 by using generic method.
 
 ## REFACTORS :
-1.Refactoring all three methods to one generic method,ensure test code has passed test case.
+1. Refactoring all three methods to one generic method,ensure test code has passed test case.
 2. Refactor to create Generic Class to take in 3 variables of Generic Type
    - Ensure the Generic Type extends Comparable
    - Write parameter constructor
