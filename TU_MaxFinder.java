@@ -6,12 +6,11 @@ import org.junit.jupiter.api.Assertions;
 import java.util.Scanner;
 
 public class TU_MaxFinder {
-
     // Test Case 1 : For Integer Values-max value at 1st position
     @Test
     void whenIntegerShouldReturnMax1() {
         Integer[] arrayOfInteger = {43,33,22};
-        Integer max = MaxFinder.findMax(arrayOfInteger);
+        Integer max =MaxFinder.testMaximum(arrayOfInteger);
 
         // Checking whether test code is passing test case or not
         Assertions.assertEquals(43,max,"Validating Max Method in Test Case 1 for Integer Numbers");
@@ -21,7 +20,7 @@ public class TU_MaxFinder {
     @Test
     void whenIntegerShouldReturnMax2() {
         Integer[] arrayOfInteger = {33,43,22};
-        Integer max = MaxFinder.findMax(arrayOfInteger);
+        Integer max = MaxFinder.testMaximum(arrayOfInteger);
 
         // Checking whether test code is passing test case or not
         Assertions.assertEquals(43,max,"Validating Max Method in Test Case 2 for Integer Numbers");
@@ -31,7 +30,7 @@ public class TU_MaxFinder {
     @Test
     void whenIntegerShouldReturnMax3() {
         Integer[] arrayOfInteger = {33,22,43};
-        Integer max = MaxFinder.findMax(arrayOfInteger);
+        Integer max = MaxFinder.testMaximum(arrayOfInteger);
 
         // Checking whether test code is passing test case or not
         Assertions.assertEquals(43,max,"Validating Max Method in Test Case 3 for Integer Numbers");
@@ -41,7 +40,7 @@ public class TU_MaxFinder {
     @Test
     void whenFloatShouldReturnMax1() {
         Float[] arrayOfFloats = {34.44f, 22.34f, 34.43f};
-        Float max = MaxFinder.findMax(arrayOfFloats);
+        Float max = MaxFinder.testMaximum(arrayOfFloats);
 
         // Checking whether test code is passing test case or not
         Assertions.assertEquals(34.44f,max,"Validating Max Method in Test Case 1 for Float Numbers");
@@ -51,7 +50,7 @@ public class TU_MaxFinder {
     @Test
     void whenFloatShouldReturnMax2() {
         Float[] arrayOfFloats = {22.34f,34.44f,34.43f};
-        Float max = MaxFinder.findMax(arrayOfFloats);
+        Float max = MaxFinder.testMaximum(arrayOfFloats);
 
         // Checking whether test code is passing test case or not
         Assertions.assertEquals(34.44f,max,"Validating Max Method in Test Case 2 for Float Numbers");
@@ -61,7 +60,7 @@ public class TU_MaxFinder {
     @Test
     void whenFloatShouldReturnMax3() {
         Float[] arrayOfFloats = {22.34f,34.43f,34.44f};
-        Float max = MaxFinder.findMax(arrayOfFloats);
+        Float max = MaxFinder.testMaximum(arrayOfFloats);
 
         // Checking whether test code is passing test case or not
         Assertions.assertEquals(34.44f,max,"Validating Max Method in Test Case 3 for Float Numbers");
@@ -71,7 +70,7 @@ public class TU_MaxFinder {
     @Test
     void whenStringShouldReturnMax1() {
         String[] arrayOfString = {"cat","apple","banana"};
-        String max = MaxFinder.findMax(arrayOfString);
+        String max = MaxFinder.testMaximum(arrayOfString);
 
         // Checking whether test code is passing test case or not
         Assertions.assertEquals("cat",max,"Validating Max Method in Test Case 1");
@@ -81,7 +80,7 @@ public class TU_MaxFinder {
     @Test
     void whenStringShouldReturnMax2() {
         String[] arrayOfString = {"apple","cat","banana"};
-        String max = MaxFinder.findMax(arrayOfString);
+        String max = MaxFinder.testMaximum(arrayOfString);
 
         // Checking whether test code is passing test case or not
         Assertions.assertEquals("cat",max,"Validating Max Method in Test Case 1");
@@ -91,10 +90,9 @@ public class TU_MaxFinder {
     @Test
     void whenStringShouldReturnMax3() {
         String[] arrayOfString = {"apple","banana","cat"};
-        String max = MaxFinder.findMax(arrayOfString);
+        String max = MaxFinder.testMaximum(arrayOfString);
 
         // Checking whether test code is passing test case or not
         Assertions.assertEquals("cat",max,"Validating Max Method in Test Case 1");
     }
 }
-
