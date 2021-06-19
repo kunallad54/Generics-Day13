@@ -6,9 +6,11 @@ import org.junit.jupiter.api.Assertions;
 public class TU_MaxFinder {
     @Test
     void whenIntegerShouldReturnMax() {
-        Integer a = 10, b = 25, c = 50;
-        Integer max = MaxFinder.findMax(a, b, c);
-        Assertions.assertEquals(50,max,"Validating Max Method");
+        Float a = 30.5f,b = 20.5f, c = 30.6f;
+        Float max = MaxFinder.findMax(a, b, c);
+
+        // Checking whether test code is passing test case or not
+        Assertions.assertEquals(30.6f,max,"Validating Max Method");
     }
 
 

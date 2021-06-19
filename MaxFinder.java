@@ -1,9 +1,17 @@
 package com.krunal.max;
 
+/**
+ * Given 3 Floats find the maximum - Ensure to test code with the Test case
+ * 
+ * @author Krunal Lad
+ * @Since 19-06-2021 
+ */
+
 public class MaxFinder {
 
-    public static Integer findMax(Integer a, Integer b, Integer c) {
-        Integer max = a;
+    //returns the max value of three floats
+    public static Float findMax(Float a, Float b, Float c) {
+        Float max = a;
         if(b.compareTo(max)> 0)
             max = b;
         if(c.compareTo(max)>0)
@@ -12,7 +20,7 @@ public class MaxFinder {
         return max;
     }
     public static void main(String[] args) {
-        Integer int1 = 37,int2 = 45,int3 = 56;
-        Integer max = findMax(int1,int2,int3);
+        Float float1 = 55.65f, float2 = 55.7f,float3 = 55.90f;
+        Float max = findMax(float1,float2,float3);
     }
 }
