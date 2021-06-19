@@ -3,14 +3,16 @@ package com.krunal.max;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;
 
+import java.util.Scanner;
+
 public class TU_MaxFinder {
     @Test
     void whenIntegerShouldReturnMax() {
-        Float a = 30.5f,b = 20.5f, c = 30.6f;
-        Float max = MaxFinder.findMax(a, b, c);
+        String str1 = "apple",str2 = "banana",str3 ="abstract";
+        String max = MaxFinder.findMax(str1,str2,str3);
 
         // Checking whether test code is passing test case or not
-        Assertions.assertEquals(30.6f,max,"Validating Max Method");
+        Assertions.assertEquals("banana",max,"Validating Max Method");
     }
 
 
