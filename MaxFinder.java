@@ -3,12 +3,8 @@ package com.krunal.max;
 import java.util.Scanner;
 
 /**
-<<<<<<< HEAD
- *Extending the max method to take more then three parameters
-=======
  *Extend the max method to also print the max to std out
  * using Generic Method - Write printMax Generic Method which is internally called from testMaximum
->>>>>>> FindMaxGenericMethod-UC5
  *
  * @author Krunal Lad
  * @Since 19-06-2021
@@ -17,15 +13,9 @@ import java.util.Scanner;
 public class MaxFinder<T extends Comparable<T>> {
 
     //declaring instance variables
-<<<<<<< HEAD
-    Integer[] arrayOfInt;
-    Float []  arrayOfFloat;
-    String[] arrayOfString;
-=======
     T[] arrayOfInt, arrayOfFloat, arrayOfString;
->>>>>>> FindMaxGenericMethod-UC5
 
-    public MaxFinder(Integer[] arrayOfInt, Float[] arrayOfFloat, String[] arrayOfString) {
+    public MaxFinder(T[] arrayOfInt, T[] arrayOfFloat, T[] arrayOfString) {
         this.arrayOfInt = arrayOfInt;
         this.arrayOfFloat = arrayOfFloat;
         this.arrayOfString = arrayOfString;
@@ -70,15 +60,6 @@ public class MaxFinder<T extends Comparable<T>> {
     private void testMaximum() {
 
         //passing instance variable to static testMaximum method
-<<<<<<< HEAD
-        Integer maxOfThreeInt = printMax(arrayOfInt);
-        System.out.println("The maximum value of three integers is : " + maxOfThreeInt);
-
-        Float maxOfThreeFloat = printMax(arrayOfFloat);
-        System.out.println("The maximum value of three floats is : " + maxOfThreeFloat);
-
-        String maxOfThreeString = printMax(arrayOfString);
-=======
         Integer maxOfThreeInt = (Integer) printMax(arrayOfInt);
         System.out.println("The maximum value of three integers is : " + maxOfThreeInt);
 
@@ -86,40 +67,14 @@ public class MaxFinder<T extends Comparable<T>> {
         System.out.println("The maximum value of three floats is : " + maxOfThreeFloat);
 
         String maxOfThreeString = (String) printMax(arrayOfString);
->>>>>>> FindMaxGenericMethod-UC5
         System.out.println("The maximum value of three string is : " + maxOfThreeString);
     }
 
     //displays maximum of three values
-<<<<<<< HEAD
-   public static Integer printMax(Integer[] inputArray) {
-
-        Integer max = inputArray[0];
-        for (Integer t : inputArray) {
-            if (t.compareTo(max) > 0)
-                max = t;
-        }
-        return max;
-    }
-    public static Float printMax(Float[] inputArray) {
-
-        Float max = inputArray[0];
-        for (Float t : inputArray) {
-            if (t.compareTo(max) > 0)
-                max = t;
-        }
-        return max;
-    }
-    public static String printMax(String[] inputArray) {
-
-        String max = inputArray[0];
-        for (String t : inputArray) {
-=======
     static <T extends Comparable<T>> T printMax(T[] inputArray) {
 
         T max = inputArray[0];
         for (T t : inputArray) {
->>>>>>> FindMaxGenericMethod-UC5
             if (t.compareTo(max) > 0)
                 max = t;
         }
